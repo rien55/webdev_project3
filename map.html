@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafe Map</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Archivo:wght@400;500;700&amp;display=swap">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&amp;callback=initMap"></script>
+</head>
+
+<body class="map">
+  <!--Justin Shin-->
+  <!--ITMD 361-->
+  <!--Sophomore-->
+  <header>
+    <nav>
+      <ul>
+        <!-- Navigation is the same on all four html files -->
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="page3.html">Video Profile</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>A Cafe I Recommend</h1>
+    <p>This page uses the Google Maps JavaScript API to show HamHamPangPang, a themed cafe in Suwon, South Korea, run by the game studio Project Moon. It is the same studio behind the games that all three Mili songs on my <a href="page3.html">video profile page</a> were written for. The map below is interactive, so you can pan, zoom and switch between the map and satellite views.</p>
+    <p>What makes it worth recommending is that the cafe rebuilds itself around whichever game the studio is promoting at the time. The menu, the decorations and the music playing inside all change with the theme, so going back a year later is not the same visit twice. That is also the problem. As the games picked up a larger audience the reservations got much harder to land, and the popular themes book out quickly. I keep going anyway.</p>
+
+    <div id="map"></div>
+
+    <h2>Using The Map</h2>
+    <p>Three things were added to the basic map from the Google documentation, so there is more to do here than pan and zoom:</p>
+    <ul>
+      <li>The marker sits on the cafe itself rather than on the neighbourhood, so you can see exactly which building to walk to</li>
+      <li>Click that marker and an info window opens with the name and the street address</li>
+      <li>The shaded red circle covers the block the cafe sits on, which is about a two minute walk across</li>
+    </ul>
+
+    <h2>Questions</h2>
+    <p>If anything on this site needs explaining, or you want to talk about the coursework behind it, use the button below and my contact address will appear.</p>
+    <button id="questionbutton" type="button">Questions?</button>
+  </main>
+
+  <footer>
+    <p>Built for ITMD 361 Project 3 by Justin Shin.</p>
+  </footer>
+</body>
+
+</html>
